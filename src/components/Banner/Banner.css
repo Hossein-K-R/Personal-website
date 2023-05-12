@@ -1,0 +1,103 @@
+.Banner {
+    width: 100%;
+    max-width: var(--containerSize);
+    margin: 0 auto;
+    height: calc(100vh - 180px);
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .Banner--Child {
+    display: flex;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  .Banner--Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    padding: 40px 20px;
+  }
+  .Banner--Content h1,
+  .Banner--Content h3,
+  .Banner--Content .Banner--Button {
+    width: 100%;
+    max-width: 490px;
+  }
+  .Banner__primaryColor {
+    color: var(--primary)
+  }
+  .Banner--Profile img{
+    max-width: 426px;
+  }
+  .Banner--Profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 50px;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+  .Banner--BackgroundImage {
+    position: absolute;
+    display: none;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .Banner--BackgroundImage img {
+    width: 100%;
+    max-width: 30vw;
+  }
+  .Banner--Quote {
+    display: none !important;
+    position: absolute;
+    bottom: 36px;
+    height: 259px;
+    width: 370px;
+    background: var(--secondary);
+    z-index: 1;
+    left: calc(50vw);
+    color: white;
+    padding-right: 57px;
+    padding-left: 57px;
+    padding-top: 33px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 960px){
+   .Banner {
+     max-height: fit-content;
+     height: auto;
+   }
+   .Banner--Child {
+     flex-direction: column;
+   }
+   .Banner--Quote {
+     position: relative;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+   }
+   .Banner--BackgroundImage {
+     display: none;
+   }
+   .Banner--Profile {
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+   }
+   .Banner--Profile img {
+     width: 100%;
+     max-width: 100%;
+   }
+  }
+  
+  

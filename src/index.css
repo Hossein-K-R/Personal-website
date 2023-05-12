@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;  
+  font-weight: 600;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1 {
+  font-size: 50px;
+  line-height: 55px;
+  margin: 20px 0;
+}
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+:root{
+  --primary: #00A7AE;
+  --bodyFontSize: 16px;
+  --secondary:#14215A;
+  --gray: #666666;
+  --black: #222222;
+  --lightGray:  #999999;
+  --bodyLineHeight: 16px;
+}

@@ -1,0 +1,38 @@
+.Header {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  display: flex;
+  padding: 43px 3px;
+}
+.Header nav {
+  flex-grow: 1;
+}
+.Header nav ul {
+  display: flex;
+  justify-content: center;
+}
+.Header nav ul li {
+  list-style: none;
+}
+.Header nav ul li a {
+  color: var(--gray);
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 28px;
+  transition-duration: 400ms;
+}
+.Header nav ul li a:hover, .Header nav ul li.active a  {
+  color: var(--primary);
+
+}
+
+img {
+  width: 250px;
+}
+.Header img {
+  max-width: 100%;
+  padding-right: 3%;
+}

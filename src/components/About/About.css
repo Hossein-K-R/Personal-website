@@ -1,0 +1,72 @@
+.About {
+    max-width: var(--containerSize);
+    margin: 0 auto;
+    display: flex;
+    height: calc(100vh - 180px);
+    align-items: center;
+    max-height: 900px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .About--VideoSection {
+    width: 100%;
+    flex-basis: 50%;
+    flex-grow: 1;
+    padding-right: 64px;
+    position: relative;
+  }
+  .About--VideoSection video {
+    max-width: 434px;
+    max-height: 300px;
+    margin-left: 55px;
+    margin-top: 59px;
+  }
+  .About--PrimaryBox {
+    width: 434px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+  }
+  .About--ContentSection {
+    width: 100%;
+    padding-left: 64px;
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  
+  
+  
+  @media (max-width: 1024px){
+    .About {
+      flex-direction: column;
+      max-height: fit-content;
+      height: auto;
+    }
+    .About--VideoSection {
+      padding: 0;
+      margin: 0;
+    }
+    .About--PrimaryBox {
+      display: none;
+    }
+    .About--VideoSection video {
+      width: 100%;
+      max-width: fit-content;
+      margin: 15px auto;
+    }
+    .About--ContentSection  {
+      padding: 20px;
+    }
+  }
+  .slider{
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      width: 99%;
+      display: flex;
+      padding: 43px 3px;
+  }
+  

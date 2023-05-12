@@ -1,0 +1,9 @@
+.Icons {
+  color: inherit;
+  cursor: pointer;
+  transition-duration: 400ms;
+  color: var(--gray);
+}
+.Icons:hover {
+  color: var(--primary);
+}

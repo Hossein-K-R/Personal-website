@@ -1,0 +1,7 @@
+.padding{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 10px;
+}

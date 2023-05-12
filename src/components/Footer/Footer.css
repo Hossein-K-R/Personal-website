@@ -1,0 +1,29 @@
+.Footer{
+    border-top: 1px solid rgba(179,179,179, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.Footer ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.Footer ul li{
+    list-style: none;
+    padding: 80px 30px;
+}
+.Footer ul li a{
+  text-decoration: none;
+    
+}
+.copyright{
+    color: var(--lightGray);
+    font-size: var(--bodyFontSize);
+    line-height: var(--bodyLineHeight);
+    padding-bottom: 80px;
+    padding-left: 10px;
+}
