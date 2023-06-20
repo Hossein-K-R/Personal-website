@@ -7,9 +7,9 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "cv.pdf";
+    link.href = "myCV.pdf";
     link.target = "_blank";
-    link.download = "CV.pdf";
+    link.download = "cv.pdf";
     link.click();
   };
 
