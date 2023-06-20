@@ -5,24 +5,33 @@ import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const location = useLocation()
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "CV.pdf";
+    link.target = "_blank";
+    link.download = "CV.pdf";
+    link.click();
+  };
+
+  const location = useLocation();
+
   return (
     <div className="Header">
       <img src={logo} alt="logo" />
       <nav>
         <ul>
-          <li className={location.pathname==='/' && 'active'}>
+          <li className={location.pathname === "/" ? "active" : ""}>
             <Link to="/">Home</Link>
           </li>
-          <li className={location.pathname==='/about' && 'active'}>
+          <li className={location.pathname === "/about" ? "active" : ""}>
             <Link to="/about">About</Link>
           </li>
-          <li className={location.pathname==='/contact' && 'active'}>
+          <li className={location.pathname === "/contact" ? "active" : ""}>
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
-      <Button>Download Resume</Button>
+      <Button onClick={handleDownloadCV}>Download Resume</Button>
     </div>
   );
 };
