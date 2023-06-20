@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 
-
 const Header = () => {
   const location = useLocation()
   return (

@@ -36,6 +36,11 @@
     flex-basis: 50%;
     flex-grow: 1;
   }
+  p{
+    max-width: 65%;
+    margin: 10px 5px;
+    padding: 7px;
+  }
   
   
   
